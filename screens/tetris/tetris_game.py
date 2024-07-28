@@ -1,6 +1,6 @@
-from tetris_grid import *
+from screens.tetris.tetris_grid import *
 
-from tetromino import *
+from screens.tetris.tetromino import *
 
 import random
 

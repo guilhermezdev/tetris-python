@@ -1,8 +1,8 @@
 import pygame
 
-from assets import *
+from utils.assets import *
 
-from position import *
+from utils.position import *
 
 class TetrisSquare:
     def __init__(self, size: float, position: Position, color, border_color = white) -> None:

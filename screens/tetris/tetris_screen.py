@@ -8,9 +8,9 @@ move_down_event = pygame.USEREVENT + 1
 
 MOVE_SIDE = 100
 
-from assets import *
+from utils.assets import *
 
-from tetris_game import *
+from screens.tetris.tetris_game import TetrisGame
 
 class TetrisScreen:
     def __init__(self, screen: Surface, game_state_manager: GameStateManager):

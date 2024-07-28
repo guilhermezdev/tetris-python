@@ -1,13 +1,13 @@
 from typing import Tuple
 from pygame.surface import Surface
 
-from tetris_square import *
+from screens.tetris.tetris_square import *
 
-from assets import *
+from utils.assets import *
 
-from tetromino import *
+from screens.tetris.tetromino import *
 
-from position import *
+from utils.position import *
 
 class TetrisGrid:
     def __init__(self) -> None:

@@ -2,7 +2,7 @@ import  pygame
 
 from game_state_manager import *
 
-from tetris_screen import *
+from screens.tetris.tetris_screen import TetrisScreen
 
 w = 540
 h = 960

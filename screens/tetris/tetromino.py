@@ -1,10 +1,10 @@
 from enum import Enum
 
-from tetris_square import *
+from screens.tetris.tetris_square import *
 
-from position import Position
+from utils.position import Position
 
-from assets import *
+from utils.assets import *
 
 class TetrominoShape(Enum):
     I = 1
