@@ -8,7 +8,7 @@ move_down_event = pygame.USEREVENT + 1
 
 MOVE_SIDE = 100
 
-from utils.assets import *
+from utils.colors import *
 
 from screens.tetris.tetris_game import TetrisGame
 
@@ -43,7 +43,9 @@ class TetrisScreen:
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LEFT:
                     self.game.move_left()
-                if event.key == pygame.K_RIGHT:
+                elif event.key == pygame.K_RIGHT:
                     self.game.move_right()
-                if event.key == pygame.K_UP:
+                elif event.key == pygame.K_UP:
                     self.game.rotate()
+                elif event.key == pygame.K_DOWN:
+                    self.game.move_down()

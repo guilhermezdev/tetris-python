@@ -4,6 +4,7 @@ from screens.tetris.tetris_square import *
 
 from utils.position import Position
 
+from utils.colors import *
 from utils.assets import *
 
 class TetrominoShape(Enum):
@@ -19,7 +20,6 @@ class Tetromino:
     def __init__(self, shape: TetrominoShape) -> None:
         self.shape = shape
         self.rotation = 0
-        self.cell_size = 25
         self.horizontal_move = 0
         self.vertical_move = 0
         self.cells : dict[int, list[Position]] = {}
@@ -43,7 +43,7 @@ class Tetromino:
         
     def draw(self, screen):
         for cell in self.get_cell_positions():
-            square = TetrisSquare(self.cell_size, Position(cell.y * self.cell_size, cell.x * self.cell_size), get_color_by_value(self.shape.value))
+            square = TetrisSquare(cell_size, Position(cell.y * cell_size, cell.x * cell_size), get_color_by_value(self.shape.value))
             square.draw(screen)
             
           
